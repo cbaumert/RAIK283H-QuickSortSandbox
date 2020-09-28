@@ -56,7 +56,7 @@ function displayProgress(arr, startIndex, endIndex, pivotIndex) {
 	// loop through each row in the table
 	for (let i = 0; i < arr.length; i++) {
 		// add a pivot row if it's the pivot
-		if (i == pivotIndex) {
+		if (i === pivotIndex) {
 			let $pivotRow = $('<tr class="mazeRow padder"></tr>');
 			for (let j = 0; j < arr.length + 2; j++) {
 				let $pivotCell = $('<td class="padder">&nbsp;</td>')
